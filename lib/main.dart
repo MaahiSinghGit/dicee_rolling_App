@@ -35,7 +35,9 @@ class _DicePageState extends State<DicePage> {
               // () {} anonymous function
               onPressed: () {
                 setState(() {
-                  left=3;
+                  //random generate non negative number form 0 to range max
+                  //syntax nextInt(int max);
+                  left=Random().nextInt(6)+1;
                 });
               },
               child: Image.asset('Images/dice$left.png'),
@@ -46,7 +48,7 @@ class _DicePageState extends State<DicePage> {
               // () {} is a anonymous function
               onPressed: () {
                 setState(() {
-                  right= 5;
+                  right= Random().nextInt(6)+1;
                 });
               },
               child: Image.asset('Images/dice$right.png'),
