@@ -15,7 +15,6 @@ void main() {
     ),
   );
 }
-
 class DicePage extends StatefulWidget {
   const DicePage({Key? key}) : super(key: key);
 
